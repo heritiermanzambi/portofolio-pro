@@ -30,7 +30,7 @@ document.getElementById("contactForm").addEventListener("submit", async e => {
   e.preventDefault();
   const data = new FormData(e.target);
 
-  await fetch("https://formsubmit.co/TON_EMAIL@gmail.com", {
+  await fetch("https://formsubmit.co/hrtrmanzambi@gmail.com", {
     method: "POST",
     body: data,
     headers: { "Accept": "application/json" }
