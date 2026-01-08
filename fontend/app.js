@@ -1,5 +1,5 @@
 // TYPING EFFECT
-const text = ["Software Engineer", "Cybersecurity Engineer in training", "building electrician","audiovisual technician"];
+const text = ["JavaScript Expert", "Backend Architect", "Modern UI Builder"];
 let i = 0, j = 0;
 
 function type() {
@@ -30,7 +30,7 @@ document.getElementById("contactForm").addEventListener("submit", async e => {
   e.preventDefault();
   const data = new FormData(e.target);
 
-  await fetch("https://formsubmit.co/hrtrmanzambi@gmail.com", {
+  await fetch("https://formsubmit.co/TON_EMAIL@gmail.com", {
     method: "POST",
     body: data,
     headers: { "Accept": "application/json" }
@@ -39,23 +39,3 @@ document.getElementById("contactForm").addEventListener("submit", async e => {
   document.getElementById("ok").classList.remove("hidden");
   e.target.reset();
 });
-
-
-
-
-// 3D HOVER EFFECT
-document.querySelectorAll(".project").forEach(card => {
-  card.addEventListener("mousemove", e => {
-    const r = card.getBoundingClientRect();
-    const x = e.clientX - r.left;
-    const y = e.clientY - r.top;
-
-    const rx = (y / r.height - 0.5) * 10;
-    const ry = (x / r.width - 0.5) * -10;
-
-    card.style.transform = `
-      rotateX(${rx}deg)
-      rotateY(${ry}deg)
-      translateY(-8px)
-    `;
-  });
