@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Full Stack Dev</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+body { font-family: 'Orbitron', sans-serif; }
+.glass {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.neon {
+  text-shadow: 0 0 20px #6366f1;
+}
+</style>
+</head>
+
+<body class="bg-black text-white overflow-x-hidden">
+
+<!-- BACKGROUND ANIMÉ -->
+<div class="fixed inset-0 bg-gradient-to-br from-indigo-900 via-black to-purple-900 animate-pulse"></div>
+
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center justify-center px-6">
+  <div class="glass rounded-3xl p-10 max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
+
+    <!-- PHOTO -->
+    <div class="flex justify-center">
+      <img src="/curculum/public/images/heritier.jpg"
+        class="w-72 h-72 rounded-full border-4 border-indigo-500 shadow-[0_0_60px_#6366f1] hover:scale-110 transition duration-500">
+    </div>
+
+    <!-- TEXTE -->
+    <div>
+      <h1 class="text-5xl md:text-7xl font-bold neon">
+        Héritier -Manzambi
+      </h1>
+
+      <p id="typing" class="text-indigo-400 text-xl mt-6 h-8"></p>
+
+      <p class="text-gray-300 mt-6">
+        Je suis une personne pragmatique, créative, ingénieur, responsable et à la recherche de nouvelles choses. 
+        J'apprécie travailler en équipe. J'aime les challenges.
+
+       <strong> Si, je ne sais pas. J'apprends et puis je t'amène les résultats du congrès demain.</strong>
+      </p>
+
+      <div class="flex gap-4 mt-8">
+        <button class="px-6 py-3 bg-indigo-600 rounded-xl hover:scale-110 transition">
+          Voir Projets
+        </button>
+        <button class="px-6 py-3 border border-indigo-600 rounded-xl hover:bg-indigo-600 transition">
+          Contact
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS 3D -->
+<section class="relative py-32 px-6">
+<h2 class="text-center text-4xl font-bold mb-20 neon">COMPÉTENCES</h2>
+
+<div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+  <div class="glass p-8 rounded-2xl hover:-rotate-2 hover:scale-110 transition">
+    <h3 class="text-indigo-400 text-xl">FRONTEND</h3>
+    <p class="mt-2 text-gray-300">HTML • Tailwind • JS • React • Css  </p>
+  </div>
+
+  <div class="glass p-8 rounded-2xl hover:rotate-2 hover:scale-110 transition">
+    <h3 class="text-indigo-400 text-xl">BACKEND</h3>
+    <p class="mt-2 text-gray-300">Node.js • Adonis js • API  • Python • PHP</p>
+  </div>
+
+  <div class="glass p-8 rounded-2xl hover:-rotate-2 hover:scale-110 transition">
+    <h3 class="text-indigo-400 text-xl">SECURITY</h3>
+    <p class="mt-2 text-gray-300">Auth • Validation • Best Practices</p>
+  </div>
+</div>
+</section>
+
+
+
+<!-- ================= PROJECTS ================= -->
+<section class="relative min-h-screen px-6 py-32">
+  <h1 class="text-center text-5xl md:text-7xl font-bold text-indigo-400 mb-20">
+    Projects
+  </h1>
+
+  <div class="max-w-7xl mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+    <!-- PROJECT -->
+    <div class="project glass p-6 rounded-3xl transition">
+      <div class="h-40 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 mb-6"></div>
+      <h3 class="text-xl font-bold text-indigo-400">eagles-engineering</h3>
+      <p class="text-gray-300 mt-2">
+        site web pour societe d'engineering
+      </p>
+      <div class="flex flex-wrap gap-2 mt-4">
+         <span class="px-3 py-1 text-sm bg-purple-500/20 rounded-full">adonis</span>
+        <span class="px-3 py-1 text-sm bg-purple-500/20 rounded-full">talwind</span>
+        <span class="px-3 py-1 text-sm bg-purple-500/20 rounded-full">Git</span>
+         <span class="px-3 py-1 text-sm bg-purple-500/20 rounded-full">js</span>
+      </div>
+      <button class="mt-6 w-full py-3 bg-indigo-600 rounded-xl hover:scale-105 transition">
+        Voir projet
+      </button>
+    </div>
+
+    <!-- PROJECT -->
+    <div class="project glass p-6 rounded-3xl transition">
+      <div class="h-40 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 mb-6"></div>
+      <h3 class="text-xl font-bold text-cyan-400">Congo-conscience</h3>
+      <p class="text-gray-300 mt-2">
+        site web pour ASBL
+      </p>
+      <div class="flex flex-wrap gap-2 mt-4">
+       <span class="px-3 py-1 text-sm bg-purple-500/20 rounded-full">adonis</span>
+        <span class="px-3 py-1 text-sm bg-purple-500/20 rounded-full">talwind</span>
+        <span class="px-3 py-1 text-sm bg-purple-500/20 rounded-full">Git</span>
+         <span class="px-3 py-1 text-sm bg-purple-500/20 rounded-full">js</span>
+      </div>
+      <button class="mt-6 w-full py-3 bg-cyan-600 rounded-xl hover:scale-105 transition">
+        Voir projet
+      </button>
+    </div>
+
+    <!-- PROJECT -->
+    <div class="project glass p-6 rounded-3xl transition">
+      <div class="h-40 rounded-xl bg-gradient-to-br from-purple-600 to-pink-600 mb-6"></div>
+      <h3 class="text-xl font-bold text-purple-400">Dev Portfolio</h3>
+      <p class="text-gray-300 mt-2">
+        Portfolio interactif avec animations premium.
+      </p>
+      <div class="flex flex-wrap gap-2 mt-4">
+        <span class="px-3 py-1 text-sm bg-purple-500/20 rounded-full">adonis</span>
+        <span class="px-3 py-1 text-sm bg-purple-500/20 rounded-full">talwind</span>
+        <span class="px-3 py-1 text-sm bg-purple-500/20 rounded-full">Git</span>
+         <span class="px-3 py-1 text-sm bg-purple-500/20 rounded-full">js</span>
+      </div>
+      <button class="mt-6 w-full py-3 bg-purple-600 rounded-xl hover:scale-105 transition">
+        Voir projet
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="relative py-32 px-6">
+<form id="contactForm"
+ class="glass max-w-xl mx-auto p-10 rounded-3xl space-y-4">
+
+<input name="name" placeholder="Nom" class="w-full p-3 bg-black rounded">
+<input name="email" type="email" placeholder="Email" class="w-full p-3 bg-black rounded">
+<textarea name="message" placeholder="Message" class="w-full p-3 bg-black rounded"></textarea>
+
+<button class="w-full py-3 bg-indigo-600 rounded-xl hover:scale-105 transition">
+Envoyer
+</button>
+
+<p id="ok" class="hidden text-green-400 text-center mt-4">
+🔥 Message envoyé avec succès
+</p>
+</form>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
