@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Héritier Manzambi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb', // Bleu moderne
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm fixed w-full z-50 top-0 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-black tracking-tight text-gray-900">
+                        Héritier_<span class="text-primary">Manzambi.</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-primary font-medium transition duration-300">Accueil</a>
+                    <a href="projets.html" class="text-gray-600 hover:text-primary font-medium transition duration-300">Projets</a>
+                    <a href="#cv" class="text-gray-600 hover:text-primary font-medium transition duration-300">Curriculum Vitae</a>
+                    <a href="#contact" class="px-5 py-2.5 bg-gray-900 text-white rounded-full hover:bg-primary transition duration-300">Contact</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-6 space-y-2 text-center">
+                <a href="index.html" class="block px-3 py-3 text-gray-600 hover:text-primary hover:bg-gray-50 rounded-md font-medium">Accueil</a>
+                <a href="index.html" class="block px-3 py-3 text-gray-600 hover:text-primary hover:bg-gray-50 rounded-md font-medium">Projets</a>
+                <a href="#cv" class="block px-3 py-3 text-gray-600 hover:text-primary hover:bg-gray-50 rounded-md font-medium">Curriculum Vitae</a>
+                <a href="#contact" class="block px-3 py-3 mt-2 mx-4 bg-gray-900 text-white rounded-full font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+   
+    <main class="flex-grow pt-24">
+    
+    <!-- SECTION HERO : IMPACT VISUEL -->
+    <section id="index.html" class="relative overflow-hidden py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                
+                <!-- Texte à gauche -->
+                <div class="lg:w-3/5 z-10 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-primary text-xs font-bold uppercase tracking-wider mb-6">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                        </span>
+                        Disponible pour de nouveaux défis
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-black text-gray-900 leading-none mb-6">
+                        Concevoir le <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-500">Futur Numérique et Le securise</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-2xl leading-relaxed">
+                        Je suis <span class="font-bold text-gray-900">Héritier Manzambi</span>, développeur créatif spécialisé dans la construction d'expériences web haute performance. Mon approche fusionne le code propre et le design centré sur l'utilisateur.
+                    </p>
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                        <a href="#projets" class="group px-8 py-4 bg-gray-900 text-white font-bold rounded-2xl hover:bg-primary transition-all duration-300 flex items-center gap-2">
+                            Voir mes projets
+                            <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="#cv" class="px-8 py-4 bg-white text-gray-900 border-2 border-gray-100 font-bold rounded-2xl hover:border-primary transition-all duration-300">
+                            Consulter mon CV
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Image Design Moderne à droite -->
+                <div class="lg:w-2/5 relative">
+                    <div class="relative z-10 w-72 h-72 md:w-96 md:h-96 mx-auto">
+                        <!-- Décorations géométriques -->
+                        <div class="absolute -top-6 -left-6 w-32 h-32 bg-blue-200 rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob"></div>
+                        <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-purple-200 rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob animation-delay-2000"></div>
+                        
+                        <!-- Cadre Photo -->
+                        <div class="relative w-full h-full rounded-[3rem] overflow-hidden border-[8px] border-white shadow-2xl skew-y-2 hover:skew-y-0 transition-all duration-500">
+                            <img src="images/heritier.jpg" 
+                                 alt="Héritier Manzambi" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PROJETS : GRID MODERNE -->
+    <section id="#projets" class="py-24 bg-gray-50/50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-black text-gray-900">Projets Sélectionnés</h2>
+                    <p class="text-gray-500 mt-2 italic text-lg text-primary">Le résultat de la passion et de la précision.</p>
+                </div>
+                <a href="#" class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-blue-700 hover:border-blue-700 transition">Voir tout le portfolio</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Projet 1 -->
+                <div class="group relative bg-white rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
+                    <div class="h-[400px] overflow-hidden">
+                        <img src="images/princem.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <h3 class="text-3xl font-bold text-white mb-2">aigle_engineering</h3>
+                            <p class="text-gray-300 mb-6">Application de web pour aigle_engineering</p>
+                           <a href="https://congo-conscience.vercel.app/"><button class="px-6 py-3 bg-white text-black font-bold rounded-xl flex items-center gap-2">
+                                Explorer <i class="fas fa-external-link-alt text-sm"></i>
+                            </button></a> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="group relative bg-white rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
+                    <div class="h-[400px] overflow-hidden">
+                        <img src="images/IMG_3776.JPG" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <h3 class="text-3xl font-bold text-white mb-2">aigle_engineering</h3>
+                            <p class="text-gray-300 mb-6">societe de l'installation electrique</p>
+                            <a href="https://eagles-engineerings-com.vercel.app/"><button class="px-6 py-3 bg-white text-black font-bold rounded-xl flex items-center gap-2">
+                                Explorer <i class="fas fa-external-link-alt text-sm"></i>
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CV & SKILLS : BENTO STYLE -->
+    <section id="cv" class="py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Bloc Expérience (Ligne de temps) -->
+                <div class="lg:col-span-2 bg-gray-900 rounded-[3rem] p-8 md:p-12 text-white">
+                    <h2 class="text-3xl font-bold mb-10 flex items-center gap-4">
+                        <span class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-sm">01</span>
+                        Expériences
+                    </h2>
+                    <div class="space-y-10">
+                        <div class="relative pl-8 border-l border-gray-700">
+                            <div class="absolute -left-[5px] top-2 w-2 h-2 bg-primary rounded-full"></div>
+                            <span class="text-primary font-bold text-sm uppercase">2026 - Présent</span>
+                            <h3 class="text-xl font-bold mt-1">Engineer sofware </h3>
+                            <p class="text-gray-400">ESG-LAU</p>
+                        </div>
+
+                       
+                        <div class="relative pl-8 border-l border-gray-700">
+                            <div class="absolute -left-[5px] top-2 w-2 h-2 bg-primary rounded-full"></div>
+                            <span class="text-gray-500 font-bold text-sm uppercase">2025 - 2026</span>
+                            <h3 class="text-xl font-bold mt-1">Engineer cybersecurity "Hacking ethique"</h3>
+                            <p class="text-gray-400">Cyberdev ACADEMIE</p>
+                        </div>
+
+
+                        <div class="relative pl-8 border-l border-gray-700">
+                            <div class="absolute -left-[5px] top-2 w-2 h-2 bg-gray-500 rounded-full"></div>
+                            <span class="text-gray-500 font-bold text-sm uppercase">2024 - 2025</span>
+                            <h3 class="text-xl font-bold mt-1">Fullstack Web Dev</h3>
+                            <p class="text-gray-400">KADEA ACADEMIE</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloc Compétences (Bento) -->
+                <div class="bg-blue-600 rounded-[3rem] p-8 md:p-12 text-white flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Expertise</h2>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/10">Tailwind CSS</span>
+                            <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/10">JavaScript (ES6+)</span>
+                            <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/10">UI Design</span>
+                            <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/10">React.js</span>
+                            <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/10">Node.js</span>
+                            <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/10">Typescript.js</span>
+                            <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/10">Postgres</span>
+                            <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/10">Création d'un Laboratoire de Test</span>
+                            <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/10">Analyse et Interception de Réseau</span>
+                            <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/10">Exploitation d'Applications Web</span>
+                            <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/10">Audit de Mots de Passe (Password Cracking)</span>
+                            <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/10">Audit de Sécurité Sans Fil (Wi-Fi)</span>
+                            <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/10">Simulation d'Ingénierie Sociale (Phishing)</span>
+                            <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/10">"Capture The Flag" (CTF)</span>
+                    
+                            
+
+
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-8 border-t border-white/20">
+                        <p class="text-blue-100 italic">"Code is poetry, design is the soul."</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+
+    <footer id="contact" class="bg-gray-900 text-white pt-12 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold mb-2">Héritier Manzambi</h3>
+                    <p class="text-gray-400 flex items-center justify-center md:justify-start gap-2 hover:text-white transition">
+                        <i class="fas fa-phone-alt"></i> +243 810943171 </p>
+                </div>
+
+                <div class="flex gap-6">
+                    <a href="" target="_blank" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-xl hover:bg-primary hover:-translate-y-1 transition-all duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/heritiermanzambi" target="_blank" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-xl hover:bg-gray-600 hover:-translate-y-1 transition-all duration-300">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" target="_blank" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-xl hover:bg-black hover:-translate-y-1 transition-all duration-300">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+                
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                &copy; 2026 Héritier Manzambi. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <style>
+    /* Animation personnalisée pour les blobs en arrière-plan */
+    @keyframes blob {
+        0% { transform: translate(0px, 0px) scale(1); }
+        33% { transform: translate(30px, -50px) scale(1.1); }
+        66% { transform: translate(-20px, 20px) scale(0.9); }
+        100% { transform: translate(0px, 0px) scale(1); }
+    }
+    .animate-blob {
+        animation: blob 7s infinite;
+    }
+    .animation-delay-2000 {
+        animation-delay: 2s;
+    }
+</style>
+
+
+
+
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = btn.querySelector('i');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            if(menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
+        });
+
+        // Fermer le menu lors d'un clic sur un lien mobile
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+    </script>
+</body>
+</html>
